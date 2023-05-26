@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Checkout Animation</title>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />  
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="leftBx">
+            <div class="imgBx">
+                <img src="./imgs/done.png" class="main-img" alt="">
+            </div>
+            <div class="textBx">
+                <h2 class="heading heading-white">premium package</h2>
+                <div class="single">
+                    <span>$</span>
+                    <h1>56.99</h1>
+                    <span>/mo</span>
+                </div>
+                <ul class="features">
+                    <li>
+                        <i class='bx bx-check'></i>
+                        <span>10 Maximum Users Allowed</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-check'></i>
+                        <span>10,000 Searches Allowed</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-check'></i>
+                        <span>200 Iterations Allowed</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="iconBx">
+                <i class='bx bx-cart-add' ></i>
+            </div>
+        </div>
+        <div class="rightBx">
+            <div class="creditCardBx">
+                <div class="inputBx">
+                    <div class="header">
+                        <h4 class="heading">card number</h4>
+                        <img src="./imgs/visa.png" class="logo" alt="">
+                    </div>
+                    <div class="inputs">
+                        <div>
+                            <input type="password" >
+                        </div>
+                    </div>
+                </div>
+                <div class="inputBx">
+                    <h4 class="heading">card holder</h4>
+                    <input type="text" placeholder="" />
+                </div>
+                <div class="wrapper">
+                    <div class="inputBx">
+                        <h4 class="heading">expiration date</h4>
+                        <input type="text" placeholder="" />
+                    </div>
+                    <div class="inputBx">
+                        <h4 class="heading">cvv</h4>
+                        <input type="text" placeholder="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

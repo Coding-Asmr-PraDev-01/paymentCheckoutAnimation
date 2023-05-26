@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+    font-family: 'Electrolize', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3e0fe;
+}
+
+.single{
+    display: flex;
+    gap: 0.3rem;
+}
+
+.single span:nth-of-type(2){
+    align-self: flex-end;
+}
+
+.single span{
+    font-size: 1.43rem;
+}
+
+.single h1{
+    font-size: 2.5rem;
+}
+
+.logo{
+    width: 4rem;
+}
+
+.heading{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: rgba(221,22,224,1);
+}
+
+.mainHeading{
+    font-size: 2.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.text{
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.heading-white{
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.imgBx img{
+    width: 20rem;
+}
+
+.container .leftBx{
+    position: relative;
+    width: 280px;
+    background-image: linear-gradient( 108.7deg,  rgba(221,22,224,1) 11%, rgba(111,22,190,1) 88.2% );
+    padding: 3rem 1rem;
+    border-radius: 1.5rem;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.container .leftBx.active{
+    width: 380px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.iconBx{
+    position: absolute;
+    bottom: -2rem;
+    width: 4.56rem;
+    height: 4.56rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.iconBx i{
+    color: rgba(99,88,238,1);
+    font-size: 2.6rem;
+    margin-top: 0.3rem;
+}
+
+.rightBx{
+    background-color: #fff;
+    width: 500px;
+    padding: 2rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: 0.5s ease;
+}
+
+.rightBx.active{
+    width: 0;
+    opacity: 0;
+}
+
+.rightBx .creditCardBx .inputBx .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightBx .creditCardBx .inputBx {
+    border-bottom: 2px solid #000;
+    margin-bottom: 2rem;
+}
+
+.rightBx .creditCardBx .inputBx input{
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 3rem;
+}
+
