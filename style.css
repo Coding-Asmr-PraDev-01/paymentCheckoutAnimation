@@ -68,6 +68,9 @@ body{
 .container{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
 }
 
 .wrapper{
@@ -76,12 +79,12 @@ body{
 }
 
 .imgBx img{
-    width: 20rem;
+    max-width: 20rem;
 }
 
 .container .leftBx{
     position: relative;
-    width: 280px;
+    min-width: 280px;
     background-image: linear-gradient( 108.7deg,  rgba(221,22,224,1) 11%, rgba(111,22,190,1) 88.2% );
     padding: 3rem 1rem;
     border-radius: 1.5rem;    
@@ -94,7 +97,7 @@ body{
 }
 
 .container .leftBx.active{
-    width: 380px;
+    max-width: 380px;
 }
 
 .features{
@@ -126,15 +129,15 @@ body{
 
 .rightBx{
     background-color: #fff;
-    width: 500px;
+    max-width: 500px;
     padding: 2rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    transition: 0.5s ease;
+    transition: 0.7s ease;
 }
 
 .rightBx.active{
-    width: 0;
+    max-width: 0;
     opacity: 0;
 }
 
@@ -156,3 +159,11 @@ body{
     font-size: 3rem;
 }
 
+
+
+@media(max-width: 450px){
+    .imgBx img{
+        max-width: 100%;
+    }
+    
+}
